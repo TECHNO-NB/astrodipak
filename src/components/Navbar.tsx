@@ -1,10 +1,8 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import { 
-  Compass
-} from 'lucide-react';
-import logo from "../../public/logo.jpeg"
+
+
 import Image from 'next/image';
 export  const  Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -24,7 +22,7 @@ export  const  Navbar: React.FC = () => {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-amber-400 rounded-full blur-xl opacity-20 animate-pulse"></div>
-              <Image src={logo} width={50} height={50} className='rounded-full' alt='logo' />
+              <Image src={"/logo.jpeg"} width={50} height={50} className='rounded-full' alt='logo' />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-800 tracking-tight">

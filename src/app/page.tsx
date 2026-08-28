@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client";
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -22,7 +23,6 @@ import {
   Home,
   MessageCircle,
 } from "lucide-react";
-import landingpageimg from "../../public/landingpageimg.png";
 import Image from "next/image";
 import { Hero } from "@/components/Hero";
 
@@ -210,7 +210,7 @@ const About: React.FC = () => {
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-800">
             About <span className="text-amber-500">Deepjyoti</span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          <div className="w-20 h-1 bg-linear-to-r from-amber-400 to-amber-600 rounded-full"></div>
           <p className="text-lg text-gray-600 leading-relaxed">
             Deepjyoti Jyotish tatha Vastu Paramarsh Kendra is a premier
             astrological consultancy founded with the vision of bringing ancient

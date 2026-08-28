@@ -12,7 +12,7 @@ import {
   Moon,
 } from 'lucide-react';
 import Image from 'next/image';
-import landingpageimg from "../../public/landingpageimg.png";
+
 
 export const Hero: React.FC = () => {
   return (
@@ -138,7 +138,7 @@ export const Hero: React.FC = () => {
 
             <div className="absolute inset-0 bg-linear-to-tr from-amber-400/15 to-orange-400/10 z-10" />
             <Image
-              src={landingpageimg}
+              src={"/landingpageimg.png"}
               alt="ज्योतिष परामर्श"
               className="w-full h-full object-content"
               priority
